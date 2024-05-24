@@ -28,12 +28,11 @@ Allow the default shell to be zsh then confirm shell is set to zsh:
 ```bash
 echo $SHELL
 ```
-
 ## Installing Dotfiles
 
 ```bash
 cd ~
-git clone https://github.com/jarossnd/.dotfiles
+git clone --recursive https://github.com/jarossnd/.dotfiles
 cd .dotfiles
 ```
 
@@ -49,5 +48,20 @@ Run the ubuntu script to stow files
 ```bash
 ./ubuntu
 ```
+## Install Packer for Neovim
+
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+## Run PackerSync
+
+```bash
+cd ~/.config/nvim/lua/jaross
+nvim packer.lua
+:so
+:PackerSync
+```
+
 
 
