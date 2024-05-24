@@ -1,39 +1,53 @@
 # .dotfiles
 
-apt install neovim
+## Overview
 
-sudo apt-get install ripgrep
+This repo contains my dotfiles for my Ubuntu installation
 
-apt install stow
+## Prerequisites
 
-mkdir nvim
+```bash
+sudo apt install neovim ripgrep stow -y
+```
 
-cd nvim
+## Shell
 
-mkdir .config
+Install zsh:
 
-cd .config
+```bash
+sudo apt install zsh -y
+```
 
-git submodule add https://github.com/jarossnd/init.lua
+Install Oh My Zsh:
 
-git mv init.lua/ nvim
+```bash
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+Allow the default shell to be zsh then confirm shell is set to zsh:
 
-git submodule init
+```bash
+echo $SHELL
+```
 
-git submodule update
+## Installing Dotfiles
 
-git add .
+```bash
+cd ~
+git clone https://github.com/jarossnd/.dotfiles
+cd .dotfiles
+```
 
-git commit -m "submodule"
+Set executable permissions on the install scripts:
 
-git push
-
+```bash
 chmod 755 install
-
 chmod 755 ubuntu
+```
 
+Run the ubuntu script to stow files
+
+```bash
 ./ubuntu
+```
 
-apt install gcc
 
-apt install nodejs
