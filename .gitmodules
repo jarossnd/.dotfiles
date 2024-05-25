@@ -2,5 +2,5 @@
 	path = init.lua
 	url = https://github.com/jarossnd/init.lua
 [submodule "nvim/.config/init.lua"]
-	path = nvim/.config/nvim
+	path = nvim/.config/init.lua
 	url = https://github.com/jarossnd/init.lua
