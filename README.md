@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo contains my dotfiles for my Ubuntu installation
+This repo contains my dotfiles for my Ubuntu installation using Alacritty, Neovim, Treesitter, [Catppuccin](https://github.com/catppuccin/nvim) (theme), and [barbar](https://github.com/romgrk/barbar.nvim) (tabs).
 
 ## Prerequisites
 
@@ -28,6 +28,11 @@ Allow the default shell to be zsh then confirm shell is set to zsh:
 ```bash
 echo $SHELL
 ```
+
+## Terminal
+
+Alacritty
+
 ## Installing Dotfiles
 
 ```bash
