@@ -4,3 +4,12 @@
 [submodule "nvim/.config/init.lua"]
 	path = nvim/.config/init.lua
 	url = https://github.com/jarossnd/init.lua
+[submodule "nvim/.config/--force"]
+	path = nvim/.config/--force
+	url = https://github.com/jarossnd/init.lua.git
+[submodule "nvim/.config/--nvim"]
+	path = nvim/.config/--nvim
+	url = https://github.com/jarossnd/init.lua.git
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
+	url = https://github.com/jarossnd/init.lua.git
