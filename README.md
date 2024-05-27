@@ -68,5 +68,12 @@ nvim packer.lua
 :PackerSync
 ```
 
+## WSL Notes
+
+When uinsg with WSL:
+
+- Windows Terminal Theme https://github.com/catppuccin/windows-terminal
+- FiraCode Nerd Font https://www.nerdfonts.com/font-downloads
+- Font Size 14
 
 
