@@ -1,4 +1,3 @@
-# Jason Ross zsh file
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -100,3 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ls='ls -la'
+alias ll='ls -la'
+alias v='nvim'
+alias scim='sc-im'
+alias onedrive='cd "/mnt/c/Users/jaross/OneDrive - Microsoft"'
