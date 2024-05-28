@@ -1,0 +1,4 @@
+set autocalc
+set numeric_decimal=0
+set overlap
+nnoremap "ii" "\"
