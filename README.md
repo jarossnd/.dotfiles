@@ -14,6 +14,10 @@ This repo contains my dotfiles for my Ubuntu installation using Alacritty, Neovi
 sudo apt install neovim ripgrep stow -y
 ```
 
+```bash
+sudo apt update && sudo apt install build-essential
+```
+
 ## Shell
 
 Install zsh:
