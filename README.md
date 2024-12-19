@@ -7,6 +7,10 @@ This repo contains my dotfiles for my Ubuntu installation using Alacritty, Neovi
 ## Prerequisites
 
 ```bash
+ sudo apt update
+```
+
+```bash
 sudo apt install neovim ripgrep stow -y
 ```
 
