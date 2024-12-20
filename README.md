@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo contains my dotfiles for my Ubuntu installation using Alacritty, Neovim, Treesitter, [Catppuccin](https://github.com/catppuccin/nvim) (theme), and [barbar](https://github.com/romgrk/barbar.nvim) (tabs).
+This repo contains my dotfiles for my Ubuntu installation using Alacritty, Neovim, Treesitter, [Catppuccin](https://github.com/catppuccin/nvim) (theme), and [barbar](https://github.com/romgrk/barbar.nvim) (tabs). I also use these dotfiles for my Ubuntu WSL installation at work since my primary OS at work is Windows. This allows me to still use Unix / Linux based utilities when working on Windows.
 
 ## Prerequisites
 
@@ -39,13 +39,14 @@ echo $SHELL
 
 ## Terminal
 
-Alacritty
+Alacritty (When Ubuntu is our host machine)
+Windows Terminal (When Windows is our host machine and using WSL)
 
 ## Installing Dotfiles
 
 ```bash
 cd ~
-git clone --recursive https://github.com/jarossnd/.dotfiles
+git clone --recursive https://github.com/jarossnd/.dotfiles-work
 cd .dotfiles
 ```
 
@@ -67,12 +68,30 @@ Run the ubuntu script to stow files
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
+
 ## Run PackerSync
+
+It is best to run the next commands one by one. First, we will start with changing directories:
 
 ```bash
 cd ~/.config/nvim/lua/jaross
+```
+
+Open our packer.lua file in Neovim:
+
+```bash
 nvim packer.lua
+```
+
+Next we will source the packer.lua file so that Neovim will execute the contents of this file:
+
+```bash
 :so
+```
+
+Last, we will sync our plugins:
+
+```bash
 :PackerSync
 ```
 
