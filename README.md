@@ -143,3 +143,37 @@ wsl --unregister Ubuntu
 ```powershell
 wsl --install
 ```
+
+## Making Changes
+
+Navigate to the submodule directory and commit your changes:
+
+```bash
+cd path/to/submodule
+git add .
+git commit -m "Your commit message"
+```
+Push the changes to the submodule's remote repository:
+
+```bash
+git push origin main
+```
+
+Navigate back to the parent repository:
+
+```bash
+cd ..
+```
+
+Update the submodule reference in the parent repository:
+
+```bash
+git add path/to/submodule
+git commit -m "Update submodule to latest commit"
+```
+
+Push the changes to the parent repository's remote:
+
+```bash
+git push origin main
+```
