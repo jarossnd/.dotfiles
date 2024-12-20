@@ -45,8 +45,8 @@ echo $SHELL
 
 ## Terminal
 
-Alacritty (When Ubuntu is our host machine)
-Windows Terminal (When Windows is our host machine and using WSL)
+- Alacritty (When Ubuntu is our host machine)
+- Windows Terminal (When Windows is our host machine and using WSL)
 
 ## Installing Dotfiles
 
