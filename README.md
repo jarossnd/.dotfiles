@@ -7,11 +7,11 @@ This repo contains my dotfiles for my Ubuntu installation using Alacritty, Neovi
 ## Prerequisites
 
 ```bash
- sudo apt update
+sudo apt update
 ```
 
 ```bash
-sudo apt install neovim ripgrep stow -y
+sudo apt install neovim ripgrep stow gh -y
 ```
 
 ```bash
@@ -47,7 +47,7 @@ Windows Terminal (When Windows is our host machine and using WSL)
 ```bash
 cd ~
 git clone --recursive https://github.com/jarossnd/.dotfiles-work
-cd .dotfiles
+cd .dotfiles-work
 ```
 
 Set executable permissions on the install scripts:
@@ -97,10 +97,28 @@ Last, we will sync our plugins:
 
 ## WSL Notes
 
+### Notes around settings
+
 When uinsg with WSL:
 
 - Windows Terminal Theme https://github.com/catppuccin/windows-terminal
 - FiraCode Nerd Font https://www.nerdfonts.com/font-downloads
 - Font Size 14
 
+### Find WSL Installations
 
+```powershell
+wsl --list
+```
+
+### Delete WSL Installations
+
+```powershell
+wsl --unregister Ubuntu
+```
+
+### Install WSL Installations
+
+```powershell
+wsl --install
+```
