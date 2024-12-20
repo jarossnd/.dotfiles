@@ -146,6 +146,8 @@ wsl --install
 
 ## Making Changes
 
+## Nvim Submodule
+
 Navigate to the submodule directory and commit your changes:
 
 ```bash
