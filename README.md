@@ -69,6 +69,7 @@ Set executable permissions on the install scripts:
 ```bash
 chmod 755 install
 chmod 755 ubuntu
+omz reload
 ```
 
 Run the ubuntu script to stow files
