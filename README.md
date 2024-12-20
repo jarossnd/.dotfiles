@@ -6,16 +6,22 @@ This repo contains my dotfiles for my Ubuntu installation using Alacritty, Neovi
 
 ## Prerequisites
 
+Make sure our system is up-to-date:
+
 ```bash
 sudo apt update
 ```
 
-```bash
-sudo apt install neovim ripgrep stow gh -y
-```
+Install applications:
 
 ```bash
-sudo apt update && sudo apt install build-essential
+sudo apt install neovim ripgrep stow gh sc-im -y
+```
+
+Install dev tools:
+
+```bash
+sudo apt update && sudo apt install build-essential -y
 ```
 
 ## Shell
@@ -43,6 +49,14 @@ Alacritty (When Ubuntu is our host machine)
 Windows Terminal (When Windows is our host machine and using WSL)
 
 ## Installing Dotfiles
+
+Removing the default zshrc file to be replace by the one from my dotfiles
+
+```bash
+mv ~/.zshrc ~/.zshrc_old
+```
+
+Download dotfiles
 
 ```bash
 cd ~
